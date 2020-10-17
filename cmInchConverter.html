@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="https://blm-fsmvu.github.io/305/images/icon192.png">
+    <title>cm-inch Converter </title>
+
+  <style> /* CSS comment */
+
+  </style>
+</head>
+
+<body>   <!-- HTML comment: Modify all items marked Sayac -->
+
+<h2 id=title>cm-inch Converter</h2>
+cm degeri 
+<input type=number id=cm value=0 onChange="transInch()">
+&emsp;
+inch degeri
+<input type="number" id=inch value=0 onChange="transCm()" >
+<!-- <input type=button value=Artir onClick="increment()"> -->
+
+<p>Ref: <a href="https://www.w3schools.com/js/" 
+   target="NewTab">JS Tutorial</a>
+</p>
+
+<script>
+"use strict";
+// JavaScript comment
+function transInch() {
+  document.getElementById("inch").value = (document.getElementById("cm").value / 2.14).toFixed(2);
+}
+function transCm() {
+  document.getElementById("cm").value = (document.getElementById("inch").value * 2.54).toFixed(2);
+}
+    //global variable id is the HTML element with id 
+    //const title = document.getElementById("title");
+    
+</script>
+
+</body>
+</html>
