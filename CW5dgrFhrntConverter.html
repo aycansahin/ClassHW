@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="https://blm-fsmvu.github.io/305/images/icon192.png">
+    <title>cm-inch Converter </title>
+
+  <style> /* CSS comment */
+
+  </style>
+</head>
+
+<body>   <!-- HTML comment: Modify all items marked Sayac -->
+
+<h2 id=title>Fahrenheit-Celsius Converter</h2>
+celsius degeri 
+<input type=number id=cl value=0 onChange="transFr()">
+&emsp;
+fahrenheit degeri
+<input type="number" id=fr value=0 onChange="transCl()" >
+<!-- <input type=button value=Artir onClick="increment()"> -->
+
+<p>Ref: <a href="https://www.w3schools.com/js/" 
+   target="NewTab">JS Tutorial</a>
+</p>
+
+<script>
+"use strict";
+// JavaScript comment
+class Temperature {
+  constructor(value) {
+    this.value = Math.round(value);
+  }
+  get fahrenheit() {
+    return Math.round(this.value * 1.8 + 32);
+  }
+
+  get celsius(){
+    return Math.round((this.value - 32) / 1.8);
+  }
+
+}
+
+function transCl() {
+  let tp = new Temperature(document.getElementById("fr").value)
+  document.getElementById("cl").value = tp.celsius();
+}
+function transFr() {
+  let tp = new Temperature(document.getElementById("cl").value)
+  document.getElementById("fr").value = tp.fahrenheit;
+}
+    //global variable id is the HTML element with id 
+    //const title = document.getElementById("title");
+    
+</script>
+
+</body>
+</html>
