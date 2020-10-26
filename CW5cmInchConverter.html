@@ -33,11 +33,11 @@ class Transform {
     this.value = value;
   }
   get cmf() {
-    return (this.value / 2.54).toFixed(2);
+    return (this.value * 2.54).toFixed(2);
   }
 
   get inchf(){
-    return (this.value * 2.54).toFixed(2);
+    return (this.value / 2.54).toFixed(2);
   }
 
 }
