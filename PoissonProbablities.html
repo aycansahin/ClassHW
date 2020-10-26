@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" sizes="192x192" href="/JS/images/JS.png">
+    <title>Poisson Probablities </title>
+
+  <style>
+  </style>
+</head>
+
+<body>
+<h2 id=title>Poisson Probablities</h2>
+<pre id="Table"></pre>
+<script>
+"use strict";
+//June 8, 2018 MAE -- basis for 
+//https://maeyler.github.io/Visual-Mujam/
+//
+function fill(){
+    const L = [0.5, 1.0, 1.5, 2.0, 2.5, 3.0];
+    const p=[];
+    let s = "";
+    for (let λ of L){
+        s = s + "\tλ=" + λ.toFixed(1);
+    }
+    s= s + "\nx=0\t";
+    for (let λ of L){
+        s = s + Math.exp(-λ).toFixed(4) + "\t";
+        p.push(Math.exp(-λ));
+    } 
+     
+    for (let i=1; i<9; i++){
+        s = s + "\nx=" + i + "\t";
+        for(let j=0; j<L.length; j++){
+            p[j] = ((p[j] * L[j])/i).toFixed(4)
+            s = s + p[j] + "\t";
+        }
+    }
+    return s;
+
+}
+
+document.getElementById("Table").innerText = fill();
+</script>
+
+</body>
+</html> 
