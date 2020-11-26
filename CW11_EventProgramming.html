@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Event Listen </title>
+
+  <style> /* CSS comment */
+    body { max-width: 440px; }
+    #url { width: 190px; }
+    span, #url { color: blue; }
+  </style>
+</head>
+
+<body>   <!-- HTML comment: Modify all items marked xxx -->
+
+<h2 id=title title="Modify xxx"></h2>
+<b>Battery Status</b>
+<p title="Battery level">
+  Battery level: <span id=level>??</span>
+</p>
+<p title="Charging">
+  Charging : <span id=charge>??</span>
+</p>
+<p>
+  Remaining Time : <span id=rm>??</span>
+</p>
+<b>Online Status</b>
+<p id=conn>
+  Connection: <span id=con>??</span>
+</p>
+<b>Keyboard</b>
+<p id=conn>
+  Pressed : <span id=pressKey></span>
+</p>
+
+<hr />
+<b>Sample code</b>
+<pre id=sample>This text is not shown. Why?</pre>
+
+<hr />
+
+<script>
+"use strict";
+// JavaScript comment
+function init() {
+    navigator.getBattery().then(b => 
+      level.innerText = 100*b.level+'%'
+    )
+    navigator.getBattery().then(b => 
+      charge.innerText = (b.charging) ? "Charging..." : "Discharging...")
+    navigator.getBattery().then(b => 
+      rm.innerText = Math.floor(b.dischargingTime/(60*60)) + ":" + b.dischargingTime%60)
+    con.innerText = (navigator.onLine) ? "online" : "offline"
+    onkeydown = event => {pressKey.innerText += "\t" + event.key}
+}
+    title.innerText = document.title;
+    sample.innerText = init;
+    init();
+</script>
+
+</body>
+</html>
