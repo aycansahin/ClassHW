@@ -1,5 +1,4 @@
 # ClassHW
-<!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
@@ -53,9 +52,4 @@
   <li><a href="https://aycansahin.github.io/ClassHW/PoissonProbablities.html">HW#1 – Poisson Table</a></li>
 </ul>
     
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-    <script>anchors.add();</script>
     
-  </body>
-</html>
