@@ -1,4 +1,3 @@
-#ClassHW
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
@@ -14,7 +13,7 @@
 <meta property="og:url" content="https://aycansahin.github.io/ClassHW/" />
 <meta property="og:site_name" content="ClassHW" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"","url":"https://aycansahin.github.io/ClassHW/","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"Class and Homework","url":"https://aycansahin.github.io/ClassHW/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="https://aycansahin.github.io/ClassHW/assets/css/style.css?v=97440518926bfeb9853f5caa34bd91db21070b31">
@@ -22,7 +21,6 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
-      <h1>Class and Homework</h1>
             
 <p><a href="https://github.com/aycansahin/ClassHW">Repository</a>
 
