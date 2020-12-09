@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://aycansahin.github.io/ClassHW/" />
 <meta property="og:site_name" content="ClassHW" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Class and Home Work","url":"https://aycansahin.github.io/ClassHW/","@context":"https://schema.org"}</script>
+{"@type":"WebPage","headline":"","url":"https://aycansahin.github.io/ClassHW/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="stylesheet" href="https://aycansahin.github.io/ClassHW/assets/css/style.css?v=97440518926bfeb9853f5caa34bd91db21070b31">
