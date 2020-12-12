@@ -1,5 +1,5 @@
 const CACHE ='JS'
-const FILES = ['https://aycansahin.github.io/ClassHW/']
+const FILES = ['/JS/', '/JS/sss/', 'https://aycansahin.github.io/ClassHW/']
 function installCB(e) {
 e.waitUntil(
 caches.open(CACHE)
