@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" sizes="192x221" href="https://aycansahin.github.io/ClassHW/iznik_icon.jpg">
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>CWHW</title>
 <meta name="generator" content="Jekyll v3.9.0" />
@@ -46,6 +46,7 @@
 <h3 id="homework">Homework</h3>
 
 <ul>
+  <li><a href="https://blm-fsmvu.github.io/305/anim/Animation.html">HW#3 – GitHub and Animation</a></li>
   <li><a href="https://aycansahin.github.io/ClassHW/HW2_StudentCourseDataQuery">HW#2 – Database and timing</a></li>
   <li><a href="https://aycansahin.github.io/ClassHW/PoissonProbablities.html">HW#1 – Poisson Table</a></li>
 </ul>
