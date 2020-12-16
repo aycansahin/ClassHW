@@ -22,7 +22,11 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
-<script>navigator.serviceWorker.register('https://aycansahin.github.io/ClassHW/sw.js') </script>        
+<script>
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('https://aycansahin.github.io/ClassHW/sw.js').then((reg) => {console.log('SW registered', reg)}).catch(console.log)
+  }
+</script>        
 <p><a href="https://github.com/aycansahin/ClassHW">Repository</a>
 
 <h3 id="class-work">Class work</h3>
