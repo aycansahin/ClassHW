@@ -128,6 +128,7 @@ function getLocationUser(location){
     lon = loc2[1];
     askWeather()
     MAP.setView([lat, lon], 10)
+   
 }
 // Weather
 var accessKey;
@@ -155,7 +156,7 @@ async function askWeather() {
     let w = data.weather[0]; showIcon(w.icon)
     let celsius = convert(data.main.temp).toFixed(0)
     let hh = w.main+"  "+celsius+"°", {sys} = data
-    let yy = data.name+', '+sys.country
+    let yy = data.name+', '+findCn(sys.country)
     hava.innerText = hh; yer.innerText = yy
     console.log(hh, yy); console.log(sys)
     lat = data.coord.lat; lon = data.coord.lon
@@ -170,7 +171,7 @@ async function askWeather() {
         +'\nNoon '+toHM(noon, 1)+'\nSet  '+toHM(sunset, 1)
 }
 
-var MAP  //global
+var MAP;  //global
 function init() {
     //initial coordinates are given: 50. Yil Parki
     let p = {lat:lat, lng:lon}
@@ -182,7 +183,35 @@ function init() {
     L.tileLayer(u, {attribution}).addTo(MAP)
     let report = () => out.innerText = MAP.getZoom()
     MAP.on('zoom', report); report()
-    MAP.on('click', e => {getLocationUser(String(Array(e["lat"] , e["lng"])))})
+    MAP.on('click', e => {console.log(e.latlng)})    
+    //{}
+}
+
+function clc(){
+    MAP.on('click', e => {document.getElementById('en-boy').value = e.latlng['lat'].toFixed()+ ", " + e.latlng['lng'].toFixed(); getLocationUser((String(e.latlng['lat']+"," + e.latlng['lng'])))});
+    
+}
+//const data = {}
+const cntryName = {};
+async function readData() {
+    const u = "https://restcountries.eu/rest/v2/all"
+    let r = await fetch(u)
+    if (!r.ok) error(r.statusText)
+    let a = await r.json()
+    if (!a) error('Country data not found')
+    for (let x of a) cntryName[x.alpha2Code] = x
+}
+
+function findCn(cd){
+    let ulke
+    for(let x of Object.keys(cntryName)){
+        if(x==cd){
+            ulke = Object.values(cntryName[x])
+            return ulke[0];
+        }
+    }
+    console.log("Not found")
+
 }
 
 function showIcon(i) {
@@ -220,7 +249,7 @@ function getAPIkey() {
     }
 }
     err.style.display = "none"
-    getAPIkey(); askLocation(); init();
+    getAPIkey(); askLocation(); init(); clc(); readData();
 </script>
 
 </body>
