@@ -188,7 +188,7 @@ function init() {
 }
 
 function clc(){
-    MAP.on('click', e => {document.getElementById('en-boy').value = e.latlng['lat'].toFixed()+ ", " + e.latlng['lng'].toFixed(); getLocationUser((String(e.latlng['lat']+"," + e.latlng['lng'])))});
+    MAP.on('click', e => {document.getElementById('en-boy').value = e.latlng['lat'].toFixed()+ "," + e.latlng['lng'].toFixed(); getLocationUser((String(e.latlng['lat']+"," + e.latlng['lng'])))});
     
 }
 //const data = {}
