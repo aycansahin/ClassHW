@@ -57,5 +57,12 @@
   <li><a href="https://aycansahin.github.io/ClassHW/HW2_StudentCourseDataQuery">HW#2 – Database and timing</a></li>
   <li><a href="https://aycansahin.github.io/ClassHW/PoissonProbablities.html">HW#1 – Poisson Table</a></li>
 </ul>
-    
+
+<h3 id="term">Term Project</h3>
+
+<ul>
+  <li><a href="https://aycansahin.github.io/ClassHW/TermProject/MemoryGame.html">Demo – Hafıza Oyunu</a></li>
+</ul>
+  
+
     
