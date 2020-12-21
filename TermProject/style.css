@@ -1,8 +1,8 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
-    height: 400px;
-    width: 500px;
+    height: 600px;
+    width: 750px;
 }
 .timer {
 	display: inline-block;
