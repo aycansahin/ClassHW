@@ -5,7 +5,7 @@ function installCB(e) {
 addEventListener('install', installCB)
 
 function save(req, resp) {
-  if (!req.url.includes("aycansahin")) 
+  if (!req.url.includes("github")) 
      return resp;
   return caches.open(CACHE)
   .then(cache => { // save request
