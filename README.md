@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" sizes="192x192" href="https://aycansahin.github.io/ClassHW/iznik_icon.jpg">
     <link rel="manifest" href="https://aycansahin.github.io/ClassHW/manifest.json">
+    <link rel="stylesheet" type="text/css" href="https://aycansahin.github.io/ClassHW/style.css">
 <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>CWHW</title>
 <meta name="generator" content="Jekyll v3.9.0" />
@@ -15,9 +16,7 @@
 <meta property="og:site_name" content="ClassHW" />
 <script type="application/ld+json">
 {"@type":"WebPage","headline":"Class and Homework","url":"https://aycansahin.github.io/ClassHW/","@context":"https://schema.org"} </script>
-<!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="https://blm-fsmvu.github.io/305/assets/css/style.css?v=97440518926bfeb9853f5caa34bd91db21070b31">
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
