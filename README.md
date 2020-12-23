@@ -17,7 +17,7 @@
 {"@type":"WebPage","headline":"Class and Homework","url":"https://aycansahin.github.io/ClassHW/","@context":"https://schema.org"} </script>
 <!-- End Jekyll SEO tag -->
 
-    <link rel="stylesheet" href="https://aycansahin.github.io/ClassHW/assets/css/style.css?v=97440518926bfeb9853f5caa34bd91db21070b31">
+    <link rel="stylesheet" href="https://blm-fsmvu.github.io/305/assets/css/style.css?v=97440518926bfeb9853f5caa34bd91db21070b31">
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
