@@ -31,7 +31,7 @@
 <h3 id="class-work">Class work</h3>
 
 <ul>
-  <li><a href="https://aycansahin.github.io/ClassHW/CW15_GoogleDriveAPI.html">CW#15 – Write to the cloud</li>
+  <li><a href="https://aycansahin.github.io/ClassHW/CW15_GoogleDriveAPI.html">CW#15 – Write to the cloud</a></li>
   <li><a href="https://aycansahin.github.io/ClassHW/CW14_StreetMap.html">CW#14 – OpenStreetMap</a></li>
   <li><a href="https://aycansahin.github.io/ClassHW/CW13_Weather.html">CW#13 – Show Weather</a></li>
   <li><a href="https://aycansahin.github.io/ClassHW/CW12_GitHubUsers.html">CW#12 – GitHub Users</a></li>
