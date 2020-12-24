@@ -124,7 +124,9 @@ function isText(f) {
     console.assert(f instanceof File);
     return f.type.startsWith("text") 
          || f.name.endsWith(".js") || f.name.endsWith(".java")
-         || f.name.endsWith(".json") || f.name.endsWith(".md");
+         || f.name.endsWith(".json") || f.name.endsWith(".md") 
+         || f.name.endsWith(".png") || f.name.endsWith(".jpg")
+         || f.name.endsWith(".jpeg");
 }
 function fileSelect() {
     let f = button.files[0]
