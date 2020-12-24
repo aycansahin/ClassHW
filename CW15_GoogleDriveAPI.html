@@ -42,7 +42,7 @@
 <button id=auth onclick="authenticate()">Sign in</button> &nbsp;
 <button id=exec disabled onclick="execute()">List</button> &nbsp;
 <input type=file hidden id=button onChange="fileSelect()"
- accept="text/*, .js, .java, .json, .md">
+ accept="text/*, .js, .java, .json, .md, .png, .jpg, .jpeg">
 <button id=upload disabled onclick="button.click()">Upload</button>
 &nbsp;<span id=user></span>
 <pre id=out></pre>
@@ -94,7 +94,10 @@ function execute() {
     log("Drive API is called");
     //https://developers.google.com/drive/api/v3/search-files
     let q = "trashed = false and (mimeType contains 'text'"
-          + " or mimeType contains 'json')"
+           + " or mimeType contains 'json'" 
+           + " or mimeType contains 'png'"
+           + " or mimeType contains 'jpg'"
+           + " or mimeType contains 'jpeg')"
     let fields = 'files(id,name,size,modifiedTime,webViewLink)'
     gapi.client.drive.files.list({q, fields})
       .then(report, error)
