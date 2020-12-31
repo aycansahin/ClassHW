@@ -3,8 +3,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" sizes="192x192" href="https://aycansahin.github.io/ClassHW/iznik_icon.jpg" />
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-    <link rel="icon" sizes="192x192" href="https://aycansahin.github.io/ClassHW/iznik_icon.jpg">
+
     <link rel="manifest" href="https://aycansahin.github.io/ClassHW/manifest.json">
     <link rel="stylesheet" type="text/css" href="https://aycansahin.github.io/ClassHW/style.css">
 <title>CWHW</title>
