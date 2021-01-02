@@ -165,7 +165,7 @@ function createBoard(){
     while (grid.hasChildNodes()) {  
         grid.removeChild(grid.firstChild);
     }
-
+    cardArray.sort(()=> 0.5 - Math.random())
     resultDisplay.textContent = 0;
     minute=0, second=0
     cardChosen = []
