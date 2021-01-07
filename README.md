@@ -61,7 +61,7 @@
 <h3 id="term">Term Project</h3>
 
 <ul>
-  <li><a href="https://aycansahin.github.io/ClassHW/TermProject/MemoryGame.html">Demo – Hafıza Oyunu</a></li>
+  <li><a href="https://aycansahin.github.io/ClassHW/TermProject/MemoryGame.html">Hafıza Oyunu</a></li>
 </ul>
   
 
